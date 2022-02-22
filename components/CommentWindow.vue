@@ -89,7 +89,7 @@ export default Vue.extend({
   filters: {
     Time: function(value:string){
       if(value){
-      const theDay = new Date(value.replace("T", " ").slice(0, 19));
+      const theDay = new Date(value.replace("T", " ").slice(0, 19).replace("-", "/").replace("-", "/"));
       theDay.setHours(theDay.getHours() + 9);
       theDay.toLocaleString();
       let yyyy = theDay.getFullYear();
