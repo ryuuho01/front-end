@@ -91,14 +91,6 @@ export default Vue.extend( {
     return {
     }
   },
-  // async fetch() {
-  //   if ((this as any).$auth.loggedIn) {
-  //     console.log("sign in");
-  //     console.log((this as any).$auth.user.name);
-  //   } else {
-  //     console.log("sign out");
-  //   }
-  // },
   methods: {
 
     async logout() {

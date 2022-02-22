@@ -287,7 +287,6 @@ export default Vue.extend({
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid black; */
   border-radius: 15px;
   width: 100px;
   height: 30px;

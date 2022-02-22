@@ -63,13 +63,13 @@ describe("ShopCreate.vue test", () => {
       area: null,
       genre: null,
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'area'
     elm.value = ''
     jest.spyOn(document, 'getElementById').mockReturnValue(elm)
     await wrapper.get('[data-test="areaTrue"]').trigger("click")
-    // console.log(await wrapper.get('[id="area"]').html())
     await wrapper.get('[data-test="insertArea"]').trigger("click")
     expect(window.alert).toHaveBeenCalledWith("地域名を入力して下さい")
     await wrapper.get('[id="area"]').setValue("tokyo")
@@ -120,6 +120,7 @@ describe("ShopCreate.vue test", () => {
       area: null,
       genre: null,
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -182,6 +183,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -246,6 +248,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -311,6 +314,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -376,6 +380,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -441,6 +446,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -506,6 +512,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'
@@ -571,6 +578,7 @@ describe("ShopCreate.vue test", () => {
       vModelarea: "tokyo",
       vModelgenre: "ramen"
     })
+    Object.defineProperty(window, "location", { value: {} })
     window.alert = jest.fn()
     const elm = document.createElement('input')
     elm.id = 'genre'

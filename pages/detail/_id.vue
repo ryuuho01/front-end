@@ -172,7 +172,6 @@ export default Vue.extend({
 @media screen and (max-width: 768px) {
   .shopcard {
     width: 80%;
-    // height: auto;
     margin: auto;
   }
   .total-score {

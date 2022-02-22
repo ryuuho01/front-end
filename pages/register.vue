@@ -48,9 +48,6 @@ interface Data {
     email:string,
     password:string
 }
-// Vue.config.ignoredElements = [
-//     'validation-observer'
-// ]
 export default Vue.extend({
   data() :Data {
     return {
@@ -70,7 +67,6 @@ export default Vue.extend({
       try {
         await this.$axios.post(this.$config.baseURL+"/api/auth/register", senduserData);
         this.$router.push('/sendemail');
-        // location.href = this.$config.baseURL+"/sendemail";
       } catch(e:any)  {
         if (e.response.data.errors.name !== undefined){
           alert(e.response.data.errors.name)

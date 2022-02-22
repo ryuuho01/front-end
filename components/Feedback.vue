@@ -277,10 +277,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @media screen and (max-width: 768px) {
   .flex {
-  // display: flex;
   justify-content: center;
-  // flex-direction: column;
-  // flex-wrap: wrap;
   margin: auto;
 }
 }

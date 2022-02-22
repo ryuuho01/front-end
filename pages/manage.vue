@@ -137,13 +137,10 @@ export default Vue.extend({
   flex-wrap: wrap;
 }
 h2 {
-  /* display: flex;
-  justify-content: center; */
   margin: auto;
   width: 100%;
   font-size: 20px;
   margin: 20px 0;
-  /* padding-left: 16%; */
 }
 .reservation {
   width: 250px;
@@ -234,11 +231,6 @@ h2 {
   .reservation {
     width: 200px;
     height: 220px;
-    // background-color: rgb(48, 93, 255);
-    // border-radius: 5px;
-    // box-shadow: 2px 2px 2px rgb(171, 171, 171);
-    // color: white;
-    // position: relative;
     margin-bottom: 20px;
     margin-right: 5px;
   }

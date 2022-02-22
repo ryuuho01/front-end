@@ -46,9 +46,6 @@ interface Data {
   passwordInput: boolean,
   inputEmail: string,
 }
-// Vue.config.ignoredElements = [
-//     'validation-observer'
-// ]
 export default Vue.extend({
   data(): Data {
     return {
@@ -78,10 +75,8 @@ export default Vue.extend({
         .then((response) => {
           if (response.data.statusText == "OK") {
             this.$router.push('/exist');
-            // location.href = this.$config.baseURL+"/exist";
           } else if (response.data.statusText == "User Not Found") {
             this.$router.push('/notexist');
-            // location.href = this.$config.baseURL+"/notexist";
           }
         });
       }
@@ -94,7 +89,6 @@ export default Vue.extend({
             password: this.password,
           },
         });
-        // this.$router.push("/");
       } catch {
         alert("メールアドレスまたはパスワードが間違っております");
       }

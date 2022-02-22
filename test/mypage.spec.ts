@@ -804,15 +804,6 @@ describe("mypage.vue test", () => {
         $config: {
           baseURL: 'http://localhost:8000'
         },
-        // window: {
-        //   addEventListener: jest.fn(() => Promise.resolve({
-        //     e: {
-        //       target: {
-        //         closest: jest.fn(() => false),
-        //       }
-        //     }
-        //   }))
-        // }
         $auth: {
           loggedIn: true,
           user: {
@@ -872,11 +863,6 @@ describe("mypage.vue test", () => {
     window.alert = jest.fn().mockReturnValue(true)
     document.getElementById = jest.fn().mockReturnValue('')
     window.confirm = jest.fn().mockReturnValue(true)
-
-    // const elm = document.createElement('div')
-    // elm.id = 'reservation_date'
-    // elm.innerHTML = ''
-    // jest.spyOn(document, 'getElementById').mockReturnValue(elm)
 
     await wrapper.get('[data-test="modal"]').trigger("click")
     await wrapper.get('[data-test="reservation"]').trigger("click")
@@ -1451,33 +1437,14 @@ describe("mypage.vue test", () => {
               }],
             },
           })),
-          // delete: jest.fn(() => Promise.resolve({
-          //   data: {
-          //     statusText: "Deleted successfully"
-          //   }
-          // })),
-          // put: jest.fn(() => Promise.reject({
-          //   response: {
-          //     data: {
-          //       errors: {
-          //         reservation_date: undefined,
-          //         reservation_time: undefined,
-          //         num_members: undefined,
-          //       }
-          //     }
-          //   }
-          // }))
+
         },
         $config: {
           baseURL: 'http://localhost:8000'
         },
         $auth: {
           loggedIn: true,
-          // user: {
-          //   id: 999,
-          //   name: "test",
-          //   email: "test@test.com",
-          // }
+
         },
       },
     })

@@ -244,7 +244,6 @@ export default Vue.extend({
   background: white;
   width: 400px;
   margin: 60px 20px;
-  /* margin: auto; */
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgb(171, 171, 171);

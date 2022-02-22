@@ -347,38 +347,12 @@ describe("index.vue test", () => {
   it("Adding favorite (logout)", async () => {
     const wrapper = mount(App, {
       mocks: {
-        // $axios: {
-        //   get: jest.fn(() => Promise.resolve({
-        //     data: {
-        //       data: [{
-        //         id: 999,
-        //         user_id: 999,
-        //         shop_id: 999,
-        //         area_name: "東京",
-        //         genre_name: "ラーメン",
-        //         shop_name: "test",
-        //         favorites: [{
-        //           user_id: 999,
-        //           favorite: 1
-        //         }]
-        //       }],
-        //     },
-        //   })),
-        //   delete: jest.fn(() => Promise.resolve({
-        //     data: {
-        //       statusText: "Deleted successfully"
-        //     }
-        //   }))
-        // },
         $auth: {
           loggedIn: false,
         },
         $router: {
           push:jest.fn()
           },
-        // $config: {
-        //   baseURL: 'http://localhost:8000'
-        // },
       },
     })
     await wrapper.setData({
@@ -430,18 +404,10 @@ describe("index.vue test", () => {
               }],
             },
           })),
-          // delete: jest.fn(() => Promise.resolve({
-          //   data: {
-          //     statusText: "Deleted successfully"
-          //   }
-          // }))
         },
         $auth: {
           loggedIn: true,
         },
-        // $router: {
-        //   push:jest.fn()
-        //   },
         $config: {
           baseURL: 'http://localhost:8000'
         },

@@ -89,10 +89,8 @@ table tr {
 }
 table th {
   font-size: 20px;
-  /* font-weight: normal; */
   width: 150px;
   vertical-align: middle;
-  /* padding-left: 25px; */
 }
 table td {
   font-size: 20px;

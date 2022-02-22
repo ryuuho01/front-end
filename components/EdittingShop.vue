@@ -125,8 +125,6 @@ export default Vue.extend({
   },
   mounted() {
     this.get_allInfo();
-    // this.get_areaCurrent();
-    // this.get_genreCurrent();
   },
   methods: {
     get_allInfo(){

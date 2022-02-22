@@ -50,7 +50,6 @@ describe("detail.vue test", () => {
       }
     })
     await wrapper.get('[data-test="back"]').trigger("click")
-    // expect(wrapper.vm.$router.push).toBeCalledWith("/login")
   });
   
 });

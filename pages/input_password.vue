@@ -68,10 +68,8 @@ export default Vue.extend( {
         .then((response) => {
           if (response.data.statusText == "Success") {
             this.$router.push('/successchange');
-            // location.href = this.$config.baseURL+"/successchange";
           } else if (response.data.statusText == "Notfound User") {
             this.$router.push('/registerror');
-            // location.href = this.$config.baseURL+"/registerror";
           }
         });
       } catch(e:any)  {

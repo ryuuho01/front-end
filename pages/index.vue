@@ -673,25 +673,15 @@ select::-ms-expand {
   .shopcard {
     width: 100%;
     height: 430px;
-    // background-color: white;
-    // border-radius: 5px;
-    // box-shadow: 2px 2px 2px rgb(171, 171, 171);
-    // margin-right: 10px;
-    // margin-bottom: 20px;
   }
   .shop-pic {
   height: 250px;
-  // border-radius: 5px 5px 0 0;
   }
   .shop-pic img {
-    // width: 100%;
     height: 250px;
-    // object-fit: cover;
-    // border-radius: 5px 5px 0 0;
   }
   .shop-des {
     width: 100%;
-    // height: 110px;
   }
   .shop-des h2 {
     padding: 15px 0 0 30px;
